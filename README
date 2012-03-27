@@ -1,13 +1,14 @@
-<h1>The Web App Starter</h1>
+The Web App Starter
 
-<p>First off, to get things rolling you'll need to download a copy of the Web App Starter Kit</p>
-<p>Below are the steps to get you started</p>
+First off, to get things rolling you'll need to download a copy of the Web App Starter Kit
 
-<ol>
-<li>Add a new database and import the 'web_app_starter_schema.sql' file</li>
-<li>Inside of the 'application/config/database.php' file you will need to update your database name and log-in credentials</li>
-</ol>
+Below are the steps to get you started:
 
-<p>That's it, if you installed a local copy to your machine you should be able to go to http://localhost/web_app_starter/ and you will see the starting web template for your new application</p>
 
-<small>Note: if you change the name of the root directory or the URL of the directory, you will also need to change the 'base_url' variable to the sitename (default: 'http://localhost/web_app_starter/')</small>
+1. Add a new database and import the 'web_app_starter_schema.sql' file.
+2. Inside of the 'application/config/database.php' file you will need to update your database name and log-in credentials.
+
+
+That's it, if you installed a local copy to your machine you should be able to go to http://localhost/web_app_starter/ and you will see the starting web template for your new application
+
+Note: if you change the name of the root directory or the URL of the directory, you will also need to change the 'base_url' variable to the sitename (default: 'http://localhost/web_app_starter/')
