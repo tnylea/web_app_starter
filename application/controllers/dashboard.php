@@ -16,9 +16,10 @@ class Dashboard extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
-			$data['user_id']	= $this->tank_auth->get_user_id();
+			redirect(base_url().$this->tank_auth->get_username());
+			/*$data['user_id']	= $this->tank_auth->get_user_id();
 			$data['username']	= $this->tank_auth->get_username();
-			$this->my_layout->dashboard_content('dashboard', $data);
+			$this->my_layout->dashboard_content('dashboard', $data);*/
 		}
 	}
 	

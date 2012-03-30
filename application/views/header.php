@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Welcome to Website Name!</title>
-		<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/css/style.php" />
+		<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/css/style1.php" />
 	</head>
 	<body>
 	
