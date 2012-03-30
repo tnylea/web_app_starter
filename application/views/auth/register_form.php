@@ -93,8 +93,13 @@ $captcha = array(
 		<td><?php echo form_input($captcha); ?></td>
 		<td style="color: red;"><?php echo form_error($captcha['name']); ?></td>
 	</tr>
-	<?php }
+	<?php } 
 	} ?>
+	<tr>
+		<td colspan="3">
+			Return to <?php echo anchor('/auth/login/', 'Login'); ?>
+		</td>
+	</tr>
 </table>
 <?php echo form_submit('register', 'Register'); ?>
 <?php echo form_close(); ?>
