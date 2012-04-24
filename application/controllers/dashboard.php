@@ -16,14 +16,24 @@ class Dashboard extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
-			redirect(base_url().$this->tank_auth->get_username());
-			/*$data['user_id']	= $this->tank_auth->get_user_id();
-			$data['username']	= $this->tank_auth->get_username();
-			$this->my_layout->dashboard_content('dashboard', $data);*/
+			
+			$username = $this->tank_auth->get_username();
+			$is_user_account = false;
+			
+			if($this->users->get_user_by_username($username)->id == $this->tank_auth->get_user_id()){
+				$this->load_user_dashboard();
+			} else {
+				redirect('');
+			}
+		
+		
 		}
 	}
 	
+	private function load_user_dashboard(){
+		$data['user_id']	= $this->tank_auth->get_user_id();
+		$data['username']	= $this->tank_auth->get_username();
+		$this->my_layout->dashboard_content('dashboard', $data);
+	}
+	
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

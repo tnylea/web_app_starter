@@ -41,7 +41,8 @@
 
 
 $route['default_controller'] = "dashboard";
-$route['404_override'] = 'user';
+$route['user/(:any)'] = 'user';
+$route['404_override'] = '404';
 
 
 /* End of file routes.php */

@@ -15,9 +15,9 @@ class User extends CI_Controller
 	function index()
 	{	
 	
-		if($this->users->get_user_by_username($this->uri->segment(1))){
+		if($this->users->get_user_by_username($this->uri->segment(2))){
 		
-			$username = $this->uri->segment(1);
+			$username = $this->uri->segment(2);
 			$user = $this->users->get_user_by_username($username);
 			$user_admin = false;
 		

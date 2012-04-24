@@ -39,25 +39,25 @@ $captcha = array(
 <table>
 	<?php if ($use_username) { ?>
 	<tr>
-		<td><?php echo form_label('Username', $username['id']); ?></td>
-		<td><?php echo form_input($username); ?></td>
-		<td style="color: red;"><?php echo form_error($username['name']); ?><?php echo isset($errors[$username['name']])?$errors[$username['name']]:''; ?></td>
+		<td><?php echo form_label('Username', $username['id']); ?>
+		<?php echo form_input($username); ?>
+		<span><?php echo form_error($username['name']); ?><?php echo isset($errors[$username['name']])?$errors[$username['name']]:''; ?></span></td>
 	</tr>
 	<?php } ?>
 	<tr>
-		<td><?php echo form_label('Email Address', $email['id']); ?></td>
-		<td><?php echo form_input($email); ?></td>
-		<td style="color: red;"><?php echo form_error($email['name']); ?><?php echo isset($errors[$email['name']])?$errors[$email['name']]:''; ?></td>
+		<td><?php echo form_label('Email Address', $email['id']); ?>
+		<?php echo form_input($email); ?>
+		<span><?php echo form_error($email['name']); ?><?php echo isset($errors[$email['name']])?$errors[$email['name']]:''; ?></span></td>
 	</tr>
 	<tr>
-		<td><?php echo form_label('Password', $password['id']); ?></td>
-		<td><?php echo form_password($password); ?></td>
-		<td style="color: red;"><?php echo form_error($password['name']); ?></td>
+		<td><?php echo form_label('Password', $password['id']); ?>
+		<?php echo form_password($password); ?>
+		<span><?php echo form_error($password['name']); ?></span></td>
 	</tr>
 	<tr>
-		<td><?php echo form_label('Confirm Password', $confirm_password['id']); ?></td>
-		<td><?php echo form_password($confirm_password); ?></td>
-		<td style="color: red;"><?php echo form_error($confirm_password['name']); ?></td>
+		<td><?php echo form_label('Confirm Password', $confirm_password['id']); ?>
+		<?php echo form_password($confirm_password); ?>
+		<span><?php echo form_error($confirm_password['name']); ?></span></td>
 	</tr>
 
 	<?php if ($captcha_registration) {
@@ -96,8 +96,8 @@ $captcha = array(
 	<?php } 
 	} ?>
 	<tr>
-		<td colspan="3">
-			Return to <?php echo anchor('/auth/login/', 'Login'); ?>
+		<td colspan="1">
+			<div style="float:left">Return to</div> <a href="<?= site_url('auth/login'); ?>" style="float:left; margin-left:10px; top:-5px; position:relative;">Log-in</a>
 		</td>
 	</tr>
 </table>
