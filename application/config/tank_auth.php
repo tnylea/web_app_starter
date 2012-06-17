@@ -135,7 +135,7 @@ $config['recaptcha_private_key'] = '';
 | Database settings
 |
 | 'db_table_prefix' = Table prefix that will be prepended to every table name used by the library
-| (except 'ci_sessions' table).
+| (except 'auth_sessions' table).
 |--------------------------------------------------------------------------
 */
 $config['db_table_prefix'] = '';

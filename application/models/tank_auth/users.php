@@ -12,8 +12,8 @@
  */
 class Users extends CI_Model
 {
-	private $table_name			= 'users';			// user accounts
-	private $profile_table_name	= 'user_profiles';	// user profiles
+	private $table_name			= 'auth_users';			// user accounts
+	private $profile_table_name	= 'auth_user_profiles';	// user profiles
 
 	function __construct()
 	{

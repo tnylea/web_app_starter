@@ -11,7 +11,7 @@
  */
 class Login_attempts extends CI_Model
 {
-	private $table_name = 'login_attempts';
+	private $table_name = 'auth_login_attempts';
 
 	function __construct()
 	{
